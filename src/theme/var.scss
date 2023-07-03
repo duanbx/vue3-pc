@@ -1,0 +1,51 @@
+$color-primary: var(--el-color-primary);
+$color-warning: var(--color-warning);
+$color-danger: var(--color-danger);
+$border-color: var(--border-color);
+$color-white: var(--color-white);
+
+// $color-info: #19b955;
+// $color-warning: #e6a23c;
+// $color-danger: #ff8787;
+// $border-color: #eee;
+// $color-white: #fff;
+
+// @forward 'element-plus/theme-chalk/src/common/var.scss' with (
+//   $colors: (
+//     // "default": (
+//     //   "base": $info-color,
+//     // ),
+//     'primary': ('base': $color-info),
+//     'warning': ('base': $color-warning),
+//     'danger': ('base': $color-danger),
+//     'error': ('base': $color-danger),
+//   ),
+//   $border-color: (
+//     '': $border-color,
+//     'light': $border-color,
+//     'lighter': $border-color,
+//     'extra-light': $border-color,
+//     'dark': $border-color,
+//     'darker': $border-color,
+//   )
+// );
+
+// @forward 'element-plus/theme-chalk/src/dark/var.scss' with (
+//   $bg-color: (
+//     'page': #0a0a0a,
+//     '': #626aef,
+//     'overlay': #1d1e1f,
+//   )
+// );
+
+@mixin border($position: '', $color: $border-color, $px: 1px) {
+  @if ($position == '') {
+    border: $px solid $color;
+  } @else {
+    border-#{$position}: $px solid $color;
+  }
+}
+
+@mixin shadow() {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05);
+}

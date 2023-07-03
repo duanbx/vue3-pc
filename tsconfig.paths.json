@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@theme/*": ["./theme/*"],
+      "@assets/*": ["./assets/*"],
+      "@routes": ["./routes/index"],
+      "@apis": ["./apis/index"],
+      "@components": ["./components/index"],
+      "@hooks": ["./hooks/index"],
+      "@pages/*": ["./pages/*"],
+      "@stores": ["./stores/index"],
+      "@models": ["./models/index"],
+      "@utils": ["./utils/index"],
+      "@i18n": ["./i18n/index"]
+    }
+  }
+}
